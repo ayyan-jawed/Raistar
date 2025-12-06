@@ -1,1 +1,62 @@
 <h1> My World </h1>
+
+    <h2>User Feedback Form</h2>
+
+    <form action="/submit" method="POST">
+        
+        <p>
+            <label for="user_password">Password:</label>
+            <input type="password" id="user_password" name="user_password" required>
+        </p>
+
+
+        <p>
+            <label for="message_box">Your Message:</label><br>
+            <textarea id="message_box" name="message_box" rows="4" cols="50"></textarea>
+        </p>
+
+        <p>
+            **Select your favorite fruits:** (Select one or more)
+            <ul>
+                <li>
+                    <input type="checkbox" id="fruit1" name="fruits" value="apple">
+                    <label for="fruit1">Apple</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="fruit2" name="fruits" value="banana">
+                    <label for="fruit2">Banana</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="fruit3" name="fruits" value="cherry">
+                    <label for="fruit3">Cherry</label>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            **Select your gender:** (Select one only)
+            <ul>
+                <li>
+          
+                    <input type="radio" id="gender_male" name="gender" value="male">
+                    <label for="gender_male">Male</label>
+                </li>
+                <li>
+                    <input type="radio" id="gender_female" name="gender" value="female">
+                    <label for="gender_female">Female</label>
+                </li>
+                <li>
+                    <input type="radio" id="gender_other" name="gender" value="other">
+                    <label for="gender_other">Other</label>
+                </li>
+            </ul>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Submit Form">
+        </p>
+
+    </form>
+
+
